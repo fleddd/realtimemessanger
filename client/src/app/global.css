@@ -1,0 +1,82 @@
+@import 'tailwindcss';
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+:root {
+	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+	line-height: 1.5;
+
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.ant-carousel .slick-prev,
+.ant-carousel .slick-next,
+.ant-carousel .slick-prev:hover,
+.ant-carousel .slick-next:hover,
+.ant-carousel .slick-prev:focus,
+.ant-carousel .slick-next:focus {
+	font-size: inherit;
+	backdrop-filter: invert(70%);
+}
+/* Change the color of the active dot */
+.ant-carousel .slick-dots li.slick-active button {
+	background-color: #3498db; /* Change to any color you like */
+}
+
+/* Change the color of inactive dots */
+.ant-carousel .slick-dots li button {
+	background-color: #ccc;
+	opacity: 0.5;
+}
+
+/* width */
+::-webkit-scrollbar {
+	display: none;
+}
+/* 
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #ccc;
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #bbb;
+	cursor: pointer;
+} */
+
+/* Apply transparent background only for the modal with the custom class */
+.custom-transparent-modal .ant-modal-content {
+	background: transparent !important;
+	box-shadow: none !important;
+}
+.custom-transparent-modal .ant-modal-title {
+	visibility: hidden;
+}
+.custom-transparent-modal .ant-modal-close-icon svg {
+	fill: white;
+	font-size: 24px;
+	background-color: gray;
+	padding: 5px;
+	border-radius: 100%;
+	transition: all 0.3s ease-in-out;
+}
+.custom-transparent-modal .ant-modal-close-icon svg:hover {
+	background-color: rgb(100, 100, 100);
+}
+
+/* Optional: Make header & footer transparent */
+.custom-transparent-modal .ant-modal-header,
+.custom-transparent-modal .ant-modal-footer {
+	background: transparent !important;
+	border: none !important;
+}
